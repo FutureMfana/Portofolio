@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS3/main.css" />
+    <script src="JS/main.js"></script>
+</head>
+<body>
+    <div class="website-content">
+        <div class="head">
+            <div class="header">
+                <span class="header-title"> <center> Mjanyelwa <br> Kamvelihle Innocent </center></span>
+            </div>
+            <div class="nav-bar">
+                <span class="logo">
+                    <a href="Index.html">#FutureMfana</a>
+                </span>
+                <span class="links">
+                    <a href="Convert Temperature.html"  class="focus">Convert Temperature</a>
+                </span>
+                <span class="links">
+                    <a href="Family life and Hobbies.html">Family life and Hobbies</a>
+                </span>
+                <span class="links">
+                        <a href="Gallery.html">Gallery</a>
+                    </span>
+                <span class="links">
+                    <a href="Personal Information.html">Personal Information</a>
+                </span>
+                <span class="links">
+                <a href="Contact Me.html">Contact Me</a>
+                </span>
+                <span class="links">
+                    <a href="HTML5/About Me.html">About Me</a>
+                </span>
+            </div>
+        </div>
+        <div class="content">
+            <h1 class="fullscreen-caption"><center>Convert Temperature</center></h1><br>
+            <p>Convert Temperature from degrees celcuis to degrees fahreit and do the conversion inversely also (&deg;C &harr; &deg;F). 
+               <br> <b>Note:</b> That answere are rounded-off</p>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="number" id="celcuis" value="0" onchange="convert(1)">
+                            <br>
+                            <input type="text" value="Celcuis (&deg;C)"  readonly>
+                        </td>
+                        <td>
+                            <label id="equal">=</label>
+                        </td>
+                        <td>
+                            <input type="number" id="fahreheit" value="32" onchange="convert(22)">
+                            <br>
+                            <input type="text" value="Fahreheit (&deg;F)"  readonly>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <br><br>	
+        <div class="footer">
+            <center>
+                Copyright&copy; 2018
+            </center>
+        </div>
+    </div>
+</body>
+</html>

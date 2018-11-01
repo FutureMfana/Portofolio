@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS3/main.css" />
+    <script src="JS/main.js"></script>
+</head>
+<body>
+    <div class="website-content">
+        <div class="head">
+            <div class="header">
+                <span class="header-title"> <center> Mjanyelwa <br> Kamvelihle Innocent </center></span>
+            </div>
+            <div class="nav-bar">
+                <span class="logo">
+                    <a href="Index.html">#FutureMfana</a>
+                </span>
+                <span class="links">
+                    <a href="Convert Temperature.html">Convert Temperature</a>
+                </span>
+                <span class="links">
+                    <a href="Family life and Hobbies.html">Family life and Hobbies</a>
+                </span>
+                <span class="links">
+                        <a href="Gallery.html">Gallery</a>
+                    </span>
+                <span class="links">
+                    <a href="Personal Information.html">Personal Information</a>
+                </span>
+                <span class="links">
+                <a href="Contact Me.html">Contact Me</a>
+                </span>
+                <span class="links">
+                    <a href="About Me.html" class="focus">About Me</a>
+                </span>
+            </div>
+        </div>
+        <div class="content">
+            <h1 class="fullscreen-caption"><center>Who is Innocent?</center></h1><br>
+            <img src="IMG/about me.jpg" alt="Personal Information" class="contact-thumbnails"><br>
+            <div class="fullscreen-bio">
+                <button class="accordion-btn" onclick="showContent()">View his eduacational information</button>
+                <div class="info-edu info">
+                    Kamvelihle Innocent started schooling at the age of 6 years, when he first attended his grade 1 class at Mjanyelwa Junior Secondary
+                    School in Bizana in the rural areas of Eastern Cape, South Africa. He went on attending at Mjanyelwa Junior Secondary School until 
+                    grade 9 in year 2010, and then, he started his high school eduacation at Bizana Senior Secondary School in the year 2011, and then 
+                    matriculated from there in the year 2013.
+
+                    <br><br>
+                    Innocent persuaded his dream in Information Technology by attending at Walter Sisulu University at Buffalo City Campus (Postdam 
+                    Site), in the year 2015 after a gap year. He has been one of the bright students in the department of IT in the campus with some 
+                    few departmental awards (Best Student in Technical Programming I and Best Student in Overall Software Development II) and one
+                    national award (South Africa's No. 3 in Standard Bank Technology Impact Challenge 2017 in Idea Chain Challenge) through his way obtaining
+                    National Diploma (Cum Laude).
+
+                    <br><br>
+                    Kamvelihle is currently registered as an IT B-Tech student, specializing in Software Development in Walter Sisulu University of
+                    Technology and Science, got one award in hand already (as South Africa's No. 1 in Standard Bank Technology Impact Challenge in Idea Chain Challenge) and
+                    half-way through his dissertation which is necessarily for B-Tech students.
+                    <br><br>
+                </div>
+            </div>
+            <div class="fullscreen-bio">
+                <button class="accordion-btn" onclick="showContent()">View his personal information</button>
+                <div class="info-personal info">
+                    Kamvelihle Innocent born and raised in Dindini Location, born in 31 January in 1995, with four male siblings and no female siblings.
+                    He is the first child in the family follwed by Onwaba who was born in 17 May in 1995 but from a different mother. Onwaba is the follwed
+                    by Luzukolwethu who was born in 12 May 1998, thereafter him there is Anoxolo from his different mother as who was born in 14 July 2004 and
+                    followed by the last born Onele who was born in 8 August 2010.
+                </div>
+            </div>
+            <div class="fullscreen-bio">
+                <button class="accordion-btn" onclick="showContent()">View his interests</button>
+                <div class="info-intrests info">
+                    Ever since Innonce has enrolled IT, most of his interests are on new technologies surfacing on the indutsry. 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto dolorum quasi ipsum eos dolor officia cupiditate
+                     nam pariatur sunt eaque quo iste delectus soluta voluptas, voluptatem repudiandae! Ducimus, nemo ad.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, quasi fugit provident quis voluptas
+                     mollitia optio similique. Suscipit odit molestiae voluptate! Commodi, sequi maxime. Id iste cupiditate corporis optio ad.
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="footer">
+            <center>
+                Copyright&copy; 2018
+            </center>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion-btn");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
